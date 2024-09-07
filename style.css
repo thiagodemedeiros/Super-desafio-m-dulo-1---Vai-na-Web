@@ -5,31 +5,40 @@
   font-family: "Poppins", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 html {
   height: 100vh;
 }
 
 body {
-  background-color: #008cff;
+  background: linear-gradient(41deg, rgb(0, 91, 255) 0%, #00aad4 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: #00ff40 solid 3px;
   height: 100vh;
 }
 
 header {
   width: 100%;
   height: 70px;
-  background-color: #ff8800;
+  background: radial-gradient(circle, #ffda08 0%, rgb(249, 183, 0) 50%, rgb(255, 136, 0) 100%);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  border: #00ff40 solid 3px;
   position: fixed;
   top: 0;
+  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.3960784314);
+  text-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5254901961);
+}
+header h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
 }
 
 main {
@@ -46,43 +55,101 @@ main {
   width: 70vw;
   height: 400px;
   border-radius: 20px;
-  background-color: #ffffff;
+  background: radial-gradient(circle, #ffde8a 0%, #ffda76 50%, #ff8800 100%);
+  box-shadow: 0px 1px 5px #ffffff;
+  text-shadow: 0px 5px 30px rgba(0, 0, 0, 0.7333333333);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: #00ff40 solid 3px;
+  transition: box-shadow 1s ease, transform 1s ease;
+}
+.desafio1 h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.desafio1:hover {
+  box-shadow: 0px 1px 20px #ffffff;
+  transform: scale(1.05);
 }
 
 .desafio2 {
+  padding-top: 20px;
   width: 70vw;
   height: 400px;
   border-radius: 20px;
-  background-color: #ffffff;
+  background: radial-gradient(circle, #ffde8a 0%, #ffda76 50%, #ff8800 100%);
+  box-shadow: 0px 1px 5px #ffffff;
+  text-shadow: 0px 5px 30px rgba(0, 0, 0, 0.7333333333);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: #00ff40 solid 3px;
+  transition: padding-top 1s ease, box-shadow 1s ease, transform 1s ease;
+}
+.desafio2 h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #ffffff;
 }
 .desafio2 h2 {
-  display: none;
+  visibility: hidden;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease;
+  color: #ffffff;
 }
 
+.desafio2:hover {
+  box-shadow: 0px 1px 20px #ffffff;
+  padding-top: 0px;
+  transform: scale(1.05);
+}
 .desafio2:hover h2 {
-  display: flex;
+  visibility: visible;
+  opacity: 1;
 }
 
 footer {
   width: 100%;
   height: 70px;
-  background-color: #ff8800;
+  background: radial-gradient(circle, #ffda08 0%, rgb(249, 183, 0) 50%, rgb(255, 136, 0) 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: #00ff40 solid 3px;
+  padding-top: 30px;
   position: fixed;
   bottom: 0;
   left: 0;
+  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.1921568627);
+  text-shadow: 0px 5px 30px rgba(0, 0, 0, 0.7333333333);
+}
+footer h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+footer h2 {
+  visibility: hidden;
+  font-size: 20px;
+  font-weight: 700;
+  opacity: 0;
+  transition: opacity 1s ease;
+  color: #fff;
+}
+
+footer:hover {
+  padding-top: 0px;
+}
+footer:hover h1 {
+  display: none;
+}
+footer:hover h2 {
+  visibility: visible;
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */
