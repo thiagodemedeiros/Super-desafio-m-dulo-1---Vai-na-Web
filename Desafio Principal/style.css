@@ -45,14 +45,14 @@ header ul li {
 }
 @media screen and (max-width: 1000px) {
   header {
-    height: 500px;
+    height: 50vh;
     padding: 30px 0px 0px 0px;
-    gap: 50px;
+    margin: 0px 0px -30px 0px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
   }
   header img {
     height: 65px;
@@ -61,8 +61,14 @@ header ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 40px;
+    justify-content: space-evenly;
+    width: 95%;
+    height: 80%;
+    gap: 1vh;
+  }
+  header ul li {
+    font-size: 4.3vw;
+    font-weight: 400;
   }
 }
 
