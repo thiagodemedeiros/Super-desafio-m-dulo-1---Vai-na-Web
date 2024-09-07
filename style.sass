@@ -14,17 +14,31 @@
     margin: 0
     padding: 0
     box-sizing: border-box
+    font-family: 'Poppins', sans-serif
+
+html
+    height: 100vh
 
 body
     background-color: #008cff
-    @include display-flex-column
+    @include display-flex-column()
+    border: #00ff40 solid 3px
+    height: 100vh
 
 header
-    width: 100vw
+    width: 100%
     height: 70px
     background-color: #ff8800
     @include display-flex-center()
     border: #00ff40 solid 3px
+    position: fixed
+    top: 0
+
+main
+    @include display-flex-column()
+    height: 100%
+    padding: 120px 0px
+    gap: 50px
 
 .desafio1
     width: 70vw
@@ -51,8 +65,11 @@ header
 
 
 footer
-    width: 100vw
+    width: 100%
     height: 70px
     background-color: #ff8800
-    @include display-flex-center()
+    @include display-flex-column
     border: #00ff40 solid 3px
+    position: fixed
+    bottom: 0
+    left: 0

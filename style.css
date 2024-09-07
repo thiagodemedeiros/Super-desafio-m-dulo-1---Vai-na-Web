@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  height: 100vh;
 }
 
 body {
@@ -10,10 +15,12 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border: #00ff40 solid 3px;
+  height: 100vh;
 }
 
 header {
-  width: 100vw;
+  width: 100%;
   height: 70px;
   background-color: #ff8800;
   display: flex;
@@ -21,6 +28,18 @@ header {
   align-items: center;
   justify-content: center;
   border: #00ff40 solid 3px;
+  position: fixed;
+  top: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 120px 0px;
+  gap: 50px;
 }
 
 .desafio1 {
@@ -55,12 +74,15 @@ header {
 }
 
 footer {
-  width: 100vw;
+  width: 100%;
   height: 70px;
   background-color: #ff8800;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   border: #00ff40 solid 3px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }/*# sourceMappingURL=style.css.map */
