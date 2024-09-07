@@ -1,0 +1,58 @@
+@mixin display-flex-column()
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+@mixin display-flex-center()
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    background-color: #008cff
+    @include display-flex-column
+
+header
+    width: 100vw
+    height: 70px
+    background-color: #ff8800
+    @include display-flex-center()
+    border: #00ff40 solid 3px
+
+.desafio1
+    width: 70vw
+    height: 400px
+    border-radius: 20px
+    background-color: #ffffff
+    @include display-flex-column
+    border: #00ff40 solid 3px
+
+
+.desafio2
+    width: 70vw
+    height: 400px
+    border-radius: 20px
+    background-color: #ffffff
+    @include display-flex-column
+    border: #00ff40 solid 3px
+    h2
+        display: none
+
+.desafio2:hover
+    h2
+        display: flex
+
+
+footer
+    width: 100vw
+    height: 70px
+    background-color: #ff8800
+    @include display-flex-center()
+    border: #00ff40 solid 3px
