@@ -62,6 +62,25 @@ main h1 {
   justify-content: space-evenly;
   width: 90vw;
 }
+@media screen and (max-width: 900px) {
+  .cards {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  .cards a {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .cards {
+    width: 80vw;
+  }
+  .cards a {
+    width: 80vw;
+  }
+}
 
 .container1 {
   display: flex;
@@ -83,6 +102,11 @@ main h1 {
   height: 40%;
   border-radius: 5px;
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.4862745098);
+}
+@media screen and (max-width: 450px) {
+  .container1 {
+    width: 80vw;
+  }
 }
 
 .container1:hover {
@@ -147,6 +171,11 @@ main h1 {
   height: 40%;
   border-radius: 5px;
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.4862745098);
+}
+@media screen and (max-width: 450px) {
+  .container2 {
+    width: 80vw;
+  }
 }
 
 .container2:hover {
