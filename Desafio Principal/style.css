@@ -31,6 +31,10 @@ header {
   padding: 0px 30px;
   height: 60px;
 }
+header img {
+  height: 45px;
+  width: 160px;
+}
 header ul {
   justify-content: space-between;
   width: 80vw;
@@ -85,7 +89,7 @@ main .fundo {
   justify-content: space-between;
   text-align: center;
   margin: 50px 0px;
-  padding: 0px 100px 0px 0px;
+  padding: 0px 150px 0px 0px;
   width: 80vw;
 }
 .container1 img {
