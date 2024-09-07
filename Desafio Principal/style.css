@@ -7,6 +7,7 @@
 
 html, body {
   height: 100%;
+  background-color: #eeeff3;
 }
 
 a {
@@ -38,6 +39,28 @@ header ul li {
   font-size: 24px;
   font-weight: 400;
 }
+@media screen and (max-width: 1000px) {
+  header {
+    height: 500px;
+    padding: 30px 0px 0px 0px;
+    gap: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  header img {
+    height: 65px;
+  }
+  header ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+}
 
 main {
   display: flex;
@@ -45,9 +68,14 @@ main {
   align-items: center;
   justify-content: center;
 }
-main img {
+main .fundo {
   width: 100%;
   height: 320px;
+}
+@media screen and (max-width: 1000px) {
+  main .fundo {
+    display: none;
+  }
 }
 
 .container1 {
@@ -58,7 +86,7 @@ main img {
   text-align: center;
   margin: 50px 0px;
   padding: 0px 100px 0px 0px;
-  width: 75vw;
+  width: 80vw;
 }
 .container1 img {
   width: 23.5vw;
@@ -71,6 +99,28 @@ main img {
   font-size: 24px;
   font-weight: 400;
 }
+@media screen and (max-width: 1000px) {
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0px;
+    width: 75vw;
+  }
+  .container1 img {
+    width: 80vw;
+  }
+  .container1 h1 {
+    font-size: 5vw;
+    font-weight: 700;
+  }
+  .container1 p {
+    font-size: 5vw;
+    font-weight: 400;
+  }
+}
 
 .texto1 {
   display: flex;
@@ -79,6 +129,14 @@ main img {
   justify-content: center;
   gap: 20px;
   width: 30vw;
+}
+@media screen and (max-width: 1000px) {
+  .texto1 {
+    padding: 0px;
+    height: 40%;
+    gap: 30px;
+    width: 100%;
+  }
 }
 
 .container2 {
@@ -102,8 +160,41 @@ main img {
   font-size: 30px;
   font-weight: 400;
 }
+@media screen and (max-width: 1000px) {
+  .container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 0px;
+    width: 80vw;
+  }
+  .container2 img {
+    width: 16vw;
+    height: 22vh;
+  }
+  .container2 ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    gap: 80px;
+  }
+  .container2 p {
+    font-size: 5vw;
+    font-weight: 500;
+  }
+}
 
 .texto2 {
   width: 25vw;
   text-align: start;
+}
+@media screen and (max-width: 1000px) {
+  .texto2 {
+    width: 100%;
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */
