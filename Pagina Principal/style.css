@@ -5,6 +5,10 @@
   font-family: "Kodchasan", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   display: flex;
   flex-direction: column;
